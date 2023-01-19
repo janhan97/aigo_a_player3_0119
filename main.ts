@@ -38,7 +38,7 @@ function info () {
     huskylens.writeOSD(convertToText(거리), 15, 76)
     huskylens.writeOSD(convertToText(DFRobotMaqueenPlus.readSpeed(Motors1.M2)), 15, 122)
     인식된값 = huskylens.readBox_s(Content3.ID)
-    huskylens.writeOSD(convertToText(인식된값), 270, 108)
+    huskylens.writeOSD(convertToText(자동상황), 270, 108)
 }
 input.onButtonPressed(Button.AB, function () {
     reset()
@@ -110,7 +110,7 @@ radio.onReceivedValue(function (name, value) {
             DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBL, Color.GREEN)
         } else if (value == 8) {
             for (let index = 0; index < 8; index++) {
-                DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.RED)
+                DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.WHITH)
                 basic.pause(200)
                 DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.OFF)
             }

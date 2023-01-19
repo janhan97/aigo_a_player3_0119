@@ -124,7 +124,7 @@ radio.onReceivedValue(function (name, value) {
 function teamset () {
     radio.setGroup(3)
     player = "p3"
-    basic.showNumber(1)
+    basic.showNumber(3)
 }
 function reset () {
     자동상황 = 0
